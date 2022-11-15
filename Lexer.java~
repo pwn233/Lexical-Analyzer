@@ -667,7 +667,7 @@ public class Lexer {
         switch (zzAction < 0 ? zzAction : ZZ_ACTION[zzAction]) {
           case 1:
             { System.err.println("ERROR : "+yytext()); 
-        //System.exit(0);
+        System.exit(0);
             }
             // fall through
           case 10: break;
@@ -711,8 +711,8 @@ public class Lexer {
             // fall through
           case 15: break;
           case 7:
-            { System.out.println("ERROR: "+yytext());
-        //System.exit(0);
+            { System.err.println("ERROR: "+yytext());
+        System.exit(0);
             }
             // fall through
           case 16: break;
