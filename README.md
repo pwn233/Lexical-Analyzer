@@ -1,5 +1,5 @@
 # Lexical-Analyzer
- Automata Project01
+ Automata Project
 ### Command
 (in Folder Directory) Open Terminal and use this command step by step :
 <br>
