@@ -15,7 +15,7 @@ LineTerminator = \r|\n|\r\n
 /* \r = ? , \n = ? and \r\n = Windows*/
 
 InputCharacter = [^\r\n]
-/* ^somethingbehind = exception of something behind.*/
+/* contains string ^somethingbehind = exception of something behind.*/
 
 WhiteSpace = {LineTerminator} | [ \t\f]
 /* contains LineTerminator, \t = tab and \f Feed Form(for starting in next page) */
@@ -24,7 +24,7 @@ Comment = {TraditionalComment} | {EndOfLineComment}
 /* contains Traditional Comment, EndOfLineComment*/
 
 TraditionalComment = "/*" [^*] ~"*/" | "/*" "*"+ "/"
-/* contains /* something except * */, /*= 1-n*/  */
+// contains /* something except*/  and /*= 1-n*/ 
 
 EndOfLineComment = "//" {InputCharacter}* {LineTerminator}?
 /* contains //something behind(as much as you want) end by LineTerminator.*/
